@@ -51,7 +51,7 @@
 //     return $url;
 // }]);
 
-Route::get('user/{id}', 'UserController@showProfile');
+Route::get('user', 'UserController@showProfile');
 
 //TestController
 Route::resource('/test', 'TestController');
