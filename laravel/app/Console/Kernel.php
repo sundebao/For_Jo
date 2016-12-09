@@ -13,9 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        Commands\SendEmails::class,
     ];
-
     /**
      * Define the application's command schedule.
      *
