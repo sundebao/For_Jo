@@ -66,11 +66,17 @@ Route::resource('/test', 'TestController');
 //     return $user;
 // });
 
+
+Route::get('/home', function () {
+    return view('home',['name'=>'我是分配过来的变量']);
+});
+
+
 Route::get('/', function () {
     return view('welcome');
 });
 //到 指定的控制器下的 @ 指定的方法
-Route::get('/home', 'HomeController@index');
+//Route::get('/home', 'HomeController@index');
 
 // //到 指定的控制器
 // Route::resource('/admin', 'AdminController');
